@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OJT // Week 02 Field Report</title>
+    <title>OJT // Week 04 Field Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
@@ -506,142 +506,6 @@
         margin: 0 !important;
       }
 
-      /* ─── DOCUMENTATION GALLERY ─── */
-      .doc-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        margin-top: 2rem;
-        align-items: start;
-      }
-      .doc-card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 4px;
-        overflow: hidden;
-        transition:
-          border-color 0.25s,
-          transform 0.25s;
-      }
-      .doc-card:hover {
-        border-color: var(--accent);
-        transform: translateY(-2px);
-      }
-      .doc-card-img {
-        position: relative;
-        overflow: hidden;
-        background: var(--surface);
-      }
-      /* Desktop screenshot: show full image, no cropping */
-      .doc-card.desktop .doc-card-img {
-        aspect-ratio: unset;
-      }
-      .doc-card.desktop .doc-card-img img {
-        width: 100%;
-        height: auto;
-        object-fit: unset;
-        display: block;
-        transition: transform 0.4s ease;
-      }
-
-      /* Mobile screenshot: show full image, no cropping */
-      .doc-card.mobile .doc-card-img {
-        aspect-ratio: unset;
-      }
-      .doc-card.mobile .doc-card-img img {
-        width: 100%;
-        height: auto;
-        object-fit: unset;
-        display: block;
-        transition: transform 0.4s ease;
-      }
-
-      .doc-card:hover .doc-card-img img {
-        transform: scale(1.02);
-      }
-
-      /* Fallback placeholder when image is missing */
-      .doc-card-img .doc-placeholder {
-        display: none;
-        position: absolute;
-        inset: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
-        background: linear-gradient(
-          135deg,
-          rgba(0, 212, 255, 0.04),
-          rgba(168, 85, 247, 0.04)
-        );
-      }
-      .doc-card-img img.errored {
-        display: none;
-      }
-      .doc-card-img img.errored + .doc-placeholder {
-        display: flex;
-      }
-
-      .doc-placeholder-icon {
-        width: 48px;
-        height: 48px;
-        border: 1.5px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--muted);
-        font-size: 1.4rem;
-      }
-      .doc-placeholder span {
-        font-family: "Space Mono", monospace;
-        font-size: 0.68rem;
-        color: var(--muted);
-        letter-spacing: 0.1em;
-      }
-
-      /* Scan-line overlay for tech feel */
-      .doc-card-img::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 3px,
-          rgba(0, 0, 0, 0.06) 3px,
-          rgba(0, 0, 0, 0.06) 4px
-        );
-        pointer-events: none;
-      }
-
-      .doc-card-footer {
-        padding: 0.75rem 1rem;
-        border-top: 1px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.5rem;
-      }
-      .doc-card-label {
-        font-family: "Space Mono", monospace;
-        font-size: 0.65rem;
-        color: var(--muted);
-        letter-spacing: 0.08em;
-      }
-      .doc-card-label strong {
-        color: var(--accent);
-        font-weight: 700;
-      }
-      .doc-device-badge {
-        font-family: "Space Mono", monospace;
-        font-size: 0.58rem;
-        padding: 0.2em 0.55em;
-        border: 1px solid var(--border);
-        color: var(--muted);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
       /* DAILY LOG */
       .daily-log {
         margin-bottom: 3rem;
@@ -927,48 +791,6 @@
         color: var(--text);
       }
 
-      .terminal {
-        background: #060a0f;
-        border: 1px solid var(--border);
-        padding: 1.2rem;
-        font-family: "Space Mono", monospace;
-      }
-      .terminal-bar {
-        display: flex;
-        gap: 0.4rem;
-        margin-bottom: 1rem;
-      }
-      .terminal-bar span {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-      }
-      .t-red {
-        background: #ff5f57;
-      }
-      .t-yellow {
-        background: #ffbd2e;
-      }
-      .t-green-dot {
-        background: #28ca41;
-      }
-      .t-line {
-        font-size: 0.72rem;
-        line-height: 1.9;
-      }
-      .t-prompt {
-        color: var(--accent);
-      }
-      .t-cmd {
-        color: var(--white);
-      }
-      .t-out {
-        color: var(--muted);
-      }
-      .t-ok {
-        color: var(--green);
-      }
-
       footer {
         border-top: 1px solid var(--border);
         padding: 2rem clamp(1.5rem, 5vw, 4rem);
@@ -1030,9 +852,6 @@
         .profile-photo-col .img-fallback {
           min-height: 200px;
         }
-        .doc-gallery {
-          grid-template-columns: 1fr;
-        }
         .profile-details {
           grid-template-columns: 1fr;
         }
@@ -1050,9 +869,9 @@
           <a href="#" class="active">Weeks ▾</a>
           <div class="dropdown-content">
             <a href="index.html">week_01</a>
-            <a href="week_2.html" class="active">week_02</a>
+            <a href="week_2.html">week_02</a>
             <a href="week_3.html">week_03</a>
-            <a href="week_4.html">week_04</a>
+            <a href="week_4.html" class="active">week_04</a>
             <a href="week_5.html">week_05</a>
             <a href="week_6.html">week_06</a>
             <a href="week_7.html">week_07</a>
@@ -1071,7 +890,7 @@
       <section class="hero">
         <div class="hero-eyebrow">
           <div class="line"></div>
-          <span>On-the-Job Training · Week 02 of [N]</span>
+          <span>On-the-Job Training · Week 04 of [N]</span>
         </div>
 
         <div class="hero-meta">
@@ -1092,7 +911,7 @@
             ><span class="val">March 2 – March 6, 2026</span>
           </div>
           <div class="hero-meta-item">
-            <span class="key">Hours Logged</span><span class="val">9 hrs</span>
+            <span class="key">Hours Logged</span><span class="val">8 hrs</span>
           </div>
           <div class="hero-meta-item">
             <span class="key">Supervisor</span
@@ -1101,11 +920,10 @@
         </div>
 
         <p class="hero-intro">
-          This week, my focus shifted to a new project: developing a dedicated
-          Asset Management System for the Accounting Department. The goal is to
-          create a tool that helps them efficiently track company assets and
-          their monthly amortization, moving from observation and learning to
-          problem identification and system design.
+          This week involved balancing the ongoing development of the Asset
+          Management System's frontend with practical IT Support tasks. I
+          provided assistance to both the HR and Accounting departments while
+          navigating a shortened work week due to a holiday.
         </p>
       </section>
 
@@ -1118,7 +936,6 @@
             alt="Dave Gabriel M. Jazmin"
             onerror="this.classList.add('errored')"
           />
-          <!-- Fallback shown if image fails -->
           <div class="img-fallback">
             <div
               style="
@@ -1176,14 +993,14 @@
             </div>
             <div class="pd-item">
               <span class="pd-key">Period</span>
-              <span class="pd-val">Jan 30 – Feb 3, 2026</span>
+              <span class="pd-val">March 2 – March 6, 2026</span>
             </div>
             <div class="pd-item">
               <span class="pd-key">Hours Rendered</span>
-              <span class="pd-val">9 hrs</span>
+              <span class="pd-val">8 hrs</span>
             </div>
           </div>
-          <div class="profile-badge">OJT Week 02 — In Progress</div>
+          <div class="profile-badge">OJT Week 04 — In Progress</div>
         </div>
       </div>
 
@@ -1197,33 +1014,32 @@
               <h2>Week Overview</h2>
             </div>
             <p>
-              Week 2 marked a transition from network infrastructure to software
-              development. I identified a critical need in the
-              <strong>Accounting Department</strong> for an Asset Management
-              System.
+              Week 4 was a great exercise in context switching. While my primary
+              objective remained the <strong>frontend development</strong> of
+              the Asset Management System, I was also tasked with handling
+              ad-hoc <strong>IT Support</strong> requests from different
+              departments.
             </p>
             <p>
-              My week was dedicated to understanding the problem domain,
-              researching asset management principles and amortization,
-              consulting with both the IT and Accounting departments, and
-              defining the project's requirements. The week culminated in
-              selecting a modern technology stack (<strong
-                >React, PostgreSQL, Supabase</strong
-              >) to build the solution.
+              Early in the week, I resolved hardware connection issues with the
+              office printer and assisted the HR Department by troubleshooting
+              and fixing specific settings in Microsoft Excel. These tasks
+              reminded me that IT roles often require balancing long-term
+              projects with immediate troubleshooting needs.
             </p>
             <div class="callout">
               <div class="callout-label">// key insight</div>
               <p>
-                "Thoroughly understanding the user's needs and the problem
-                domain is the most critical first step in building effective
-                software."
+                "Providing effective IT support builds trust with other
+                departments. That trust becomes invaluable when you later ask
+                those same departments to adopt the new software systems you're
+                building."
               </p>
             </div>
             <p>
-              By the end of the week, I had a clear plan and the necessary
-              requirements to begin development. This foundational work is
-              crucial for ensuring the final product aligns with the
-              department's workflow and delivers real value.
+              Mid-week, I held a consultation with my mentor and sought crucial
+              feedback from the Accounting Department on the UI layout, which I
+              spent Thursday refining before the Friday holiday.
             </p>
           </div>
 
@@ -1240,13 +1056,12 @@
                 <div class="d-name">Monday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-init">Identification</span>
-                <h4>Asset Management System Need</h4>
+                <span class="day-tag tag-task">Dev & Support</span>
+                <h4>Frontend & Printer Support</h4>
                 <p>
-                  Identified an issue in the Accounting Department for managing
-                  company assets. After discussion, it was determined a
-                  dedicated Asset Management System is needed to monitor assets
-                  and track monthly amortization.
+                  Continued developing the frontend UI components. Responded to
+                  an IT Support request to diagnose and fix a lost connection
+                  with the department's network printer.
                 </p>
               </div>
             </div>
@@ -1257,13 +1072,12 @@
                 <div class="d-name">Tuesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-shadow">Research</span>
-                <h4>Understanding the System</h4>
+                <span class="day-tag tag-task">Dev & Support</span>
+                <h4>Frontend & HR Assistance</h4>
                 <p>
-                  Focused on understanding how an Asset Management System works,
-                  including asset recording, categorization, and monitoring.
-                  Learned how monthly amortization is computed and its financial
-                  impact.
+                  Resumed coding for the frontend interface. Later, I provided
+                  IT support to the HR department by troubleshooting and
+                  correcting broken settings in their Excel tracking sheets.
                 </p>
               </div>
             </div>
@@ -1275,11 +1089,12 @@
               </div>
               <div class="day-right">
                 <span class="day-tag tag-collab">Consultation</span>
-                <h4>Deepening Knowledge</h4>
+                <h4>Mentorship & Feedback</h4>
                 <p>
-                  Continued learning about the system and amortization. Received
-                  guidance from the IT Department on their current asset listing
-                  system and calculation processes to deepen my understanding.
+                  Continued developing the frontend. Held a progress
+                  consultation with my mentor and presented the latest build to
+                  the Accounting Department to gather targeted feedback on
+                  usability.
                 </p>
               </div>
             </div>
@@ -1290,13 +1105,12 @@
                 <div class="d-name">Thursday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-collab">Requirements</span>
-                <h4>User Requirements Discussion</h4>
+                <span class="day-tag tag-task">Development</span>
+                <h4>Implementing Feedback</h4>
                 <p>
-                  Conducted a discussion with the Accounting Department to
-                  gather specific features and functionalities needed for the
-                  system, ensuring the final product will align with their
-                  workflow.
+                  Dedicated the entire day to pure frontend development. Focused
+                  on applying the feedback and UI tweaks requested by the
+                  Accounting Department during Wednesday's consultation.
                 </p>
               </div>
             </div>
@@ -1307,13 +1121,11 @@
                 <div class="d-name">Friday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Planning</span>
-                <h4>Technology Stack Selection</h4>
+                <span class="day-tag tag-shadow">Holiday</span>
+                <h4>No Work</h4>
                 <p>
-                  Assessed and selected the technology stack: React for the
-                  frontend, PostgreSQL for the database, Supabase for the
-                  backend, with Vercel and GitHub for deployment and version
-                  control.
+                  Regular operations were paused in observance of a declared
+                  Holiday.
                 </p>
               </div>
             </div>
@@ -1334,17 +1146,20 @@
               "
             >
               Technical and professional competencies developed or activated
-              during Week 2:
+              during Week 4:
             </p>
             <div class="skills-grid">
-              <div class="skill-chip"><span>Requirements Gathering</span></div>
-              <div class="skill-chip"><span>System Design</span></div>
-              <div class="skill-chip"><span>Asset Management</span></div>
-              <div class="skill-chip"><span>Amortization Concepts</span></div>
-              <div class="skill-chip"><span>React</span></div>
-              <div class="skill-chip"><span>PostgreSQL</span></div>
-              <div class="skill-chip"><span>Supabase</span></div>
-              <div class="skill-chip"><span>Tech Stack Evaluation</span></div>
+              <div class="skill-chip"><span>React.js</span></div>
+              <div class="skill-chip"><span>UI Refinement</span></div>
+              <div class="skill-chip"><span>IT Helpdesk</span></div>
+              <div class="skill-chip">
+                <span>Hardware Troubleshooting</span>
+              </div>
+              <div class="skill-chip"><span>MS Excel Config</span></div>
+              <div class="skill-chip"><span>Context Switching</span></div>
+              <div class="skill-chip">
+                <span>Stakeholder Communication</span>
+              </div>
             </div>
           </div>
 
@@ -1357,30 +1172,19 @@
             <div class="c-item">
               <div class="c-num">[01]</div>
               <p>
-                <strong style="color: var(--white)">Domain Knowledge</strong> —
-                Understanding accounting principles like asset management and
-                amortization was a new challenge, requiring dedicated study and
-                consultation with department experts.
+                <strong style="color: var(--white)">Context Switching</strong>
+                — Moving abruptly from the deep focus required for coding React
+                components to troubleshooting hardware/software for staff
+                required adjusting my mindset quickly.
               </p>
             </div>
             <div class="c-item">
               <div class="c-num">[02]</div>
               <p>
-                <strong style="color: var(--white)"
-                  >Requirements Elicitation</strong
-                >
-                — Translating the Accounting Department's workflow and needs
-                into concrete, actionable system features required careful
-                communication and analysis.
-              </p>
-            </div>
-            <div class="c-item">
-              <div class="c-num">[03]</div>
-              <p>
-                <strong style="color: var(--white)">Tech Stack Decision</strong>
-                — Choosing the right technologies involved weighing factors like
-                development speed, scalability, and my own learning curve. I
-                settled on a modern stack to build a robust application.
+                <strong style="color: var(--white)">Software Quirks</strong>
+                — Fixing the HR department's Excel settings meant I had to
+                quickly research and understand their specific spreadsheet
+                workflows to apply the correct fix without breaking formulas.
               </p>
             </div>
           </div>
@@ -1392,23 +1196,24 @@
               <h2>Reflections & Next Steps</h2>
             </div>
             <p>
-              Week 2 was a pivot into software development. Identifying a
-              real-world problem and being entrusted to design a solution from
-              the ground up is a significant responsibility. This process taught
-              me the importance of user-centric design and thorough requirements
-              gathering before writing a single line of code.
+              This week gave me a realistic taste of what working in an
+              enterprise IT department looks like. You are rarely allowed to
+              just lock yourself in a room and code; you also have to keep the
+              business running smoothly by helping users with their day-to-day
+              technical issues.
             </p>
             <p>
-              I'm excited to start building the application and apply the
-              technical skills I've planned to use. The foundational work this
-              week has given me a clear roadmap for the project.
+              While the IT support tasks (printer, Excel) took time away from
+              coding, they allowed me to interact with people from HR and
+              Accounting. Building these relationships is highly rewarding and
+              makes the collaborative software design process much smoother.
             </p>
             <div class="callout">
-              <div class="callout-label">// week 3 objectives</div>
+              <div class="callout-label">// week 5 objectives</div>
               <p>
-                Begin development of the Asset Management System's frontend
-                using React and set up the Supabase backend with the PostgreSQL
-                database schema.
+                Finalize the remaining frontend layout adjustments and begin
+                connecting the user interface directly to the Supabase backend
+                to perform actual data queries and updates.
               </p>
             </div>
           </div>
@@ -1447,7 +1252,7 @@
             </div>
             <div class="info-row">
               <span class="k">Hours</span
-              ><span class="v">10 / [Total] hrs</span>
+              ><span class="v">35 / [Total] hrs</span>
             </div>
           </div>
 
@@ -1465,37 +1270,37 @@
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Technical Skills</span
-                ><span class="pct">55%</span>
+                ><span class="pct">80%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 55%"></div>
+                <div class="prog-fill" style="width: 80%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Task Completion</span
-                ><span class="pct">75%</span>
+                ><span class="pct">85%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 85%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Team Integration</span
-                ><span class="pct">70%</span>
+                ><span class="pct">85%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 70%"></div>
+                <div class="prog-fill" style="width: 85%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Confidence Level</span
-                ><span class="pct">65%</span>
+                ><span class="pct">80%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 65%"></div>
+                <div class="prog-fill" style="width: 80%"></div>
               </div>
             </div>
           </div>
@@ -1504,19 +1309,19 @@
             <div class="s-card-title">// highlights</div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Identified need for an Asset Management System.</p>
+              <p>Continued React frontend development.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Gathered system requirements from Accounting.</p>
+              <p>Resolved network printer connection issue.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Consulted with IT on existing processes.</p>
+              <p>Fixed HR department's MS Excel config.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Selected a modern tech stack for development.</p>
+              <p>Gathered Accounting UI feedback.</p>
             </div>
           </div>
         </aside>
@@ -1525,7 +1330,7 @@
 
     <footer>
       <div class="footer-left">
-        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 02</div>
+        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 04</div>
         <div style="margin-top: 0.2rem">Bicol University · 2025-2026</div>
       </div>
     </footer>
