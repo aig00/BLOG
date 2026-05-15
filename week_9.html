@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OJT // Week 03 Field Report</title>
+    <title>OJT // Week 09 Field Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
@@ -870,13 +870,13 @@
           <div class="dropdown-content">
             <a href="index.html">week_01</a>
             <a href="week_2.html">week_02</a>
-            <a href="week_3.html" class="active">week_03</a>
+            <a href="week_3.html">week_03</a>
             <a href="week_4.html">week_04</a>
             <a href="week_5.html">week_05</a>
             <a href="week_6.html">week_06</a>
             <a href="week_7.html">week_07</a>
             <a href="week_8.html">week_08</a>
-            <a href="week_9.html">week_09</a>
+            <a href="week_9.html" class="active">week_09</a>
             <a href="week_10.html">week_10</a>
             <a href="week_11.html">week_11</a>
             <a href="week_12.html">week_12</a>
@@ -891,7 +891,7 @@
       <section class="hero">
         <div class="hero-eyebrow">
           <div class="line"></div>
-          <span>On-the-Job Training · Week 03 of [N]</span>
+          <span>On-the-Job Training · Week 09 of [N]</span>
         </div>
 
         <div class="hero-meta">
@@ -909,7 +909,7 @@
           </div>
           <div class="hero-meta-item">
             <span class="key">Period</span
-            ><span class="val">March 9 – 13, 2026</span>
+            ><span class="val">April 20 – 24, 2026</span>
           </div>
           <div class="hero-meta-item">
             <span class="key">Hours Logged</span><span class="val">45 hrs</span>
@@ -921,10 +921,11 @@
         </div>
 
         <p class="hero-intro">
-          This week was highly productive, marking the shift from planning into
-          active development. My primary objective was initiating the groundwork
-          for the Asset Management System by configuring our backend and pushing
-          forward with building the frontend interface.
+          Week 9 was entirely focused on data portability and reporting. I
+          implemented comprehensive Excel export functionalities across all
+          major modules of the Asset Management System, ensuring the Accounting
+          Department can easily generate, filter, and format their financial
+          reports.
         </p>
       </section>
 
@@ -937,7 +938,6 @@
             alt="Dave Gabriel M. Jazmin"
             onerror="this.classList.add('errored')"
           />
-          <!-- Fallback shown if image fails -->
           <div class="img-fallback">
             <div
               style="
@@ -995,14 +995,14 @@
             </div>
             <div class="pd-item">
               <span class="pd-key">Period</span>
-              <span class="pd-val">March 9 – 13, 2026</span>
+              <span class="pd-val">April 20 – 24, 2026</span>
             </div>
             <div class="pd-item">
               <span class="pd-key">Hours Rendered</span>
               <span class="pd-val">45 hrs</span>
             </div>
           </div>
-          <div class="profile-badge">OJT Week 03 — In Progress</div>
+          <div class="profile-badge">OJT Week 09 — In Progress</div>
         </div>
       </div>
 
@@ -1016,32 +1016,35 @@
               <h2>Week Overview</h2>
             </div>
             <p>
-              Week 3 was heavily focused on the actual implementation of the
-              <strong>Asset Management System</strong>. With the requirements
-              gathered and the tech stack selected, it was time to dive into
-              writing code.
+              A software system is only as good as the data it produces. This
+              week was dedicated to taking the data stored securely in our
+              Supabase backend and making it exportable, readable, and highly
+              presentable for the Accounting Department via Excel spreadsheets.
             </p>
             <p>
-              I kicked off the week by setting up the foundational architecture,
-              specifically initializing a <strong>React.js</strong> project and
-              configuring the <strong>PostgreSQL</strong> database via
-              <strong>Supabase</strong>. The bulk of the week was then dedicated
-              to building the frontend user interface using React and
-              <strong>Tailwind CSS</strong> to ensure a clean and responsive
-              design.
+              I systematically went through each module of the
+              application—<strong
+                >Dashboard, Asset Inventory, Downpayment, Monthly Depreciation,
+                and Logs</strong
+              >—and integrated robust Excel export buttons. For the Asset
+              Inventory specifically, I added complex filter logic, allowing
+              users to select exactly which asset categories they wanted to
+              export rather than dumping the entire database every time.
             </p>
             <div class="callout">
               <div class="callout-label">// key insight</div>
               <p>
-                "Building a user interface isn't just about making it look good;
-                it's about continuously validating the design with end-users to
-                ensure it actually solves their workflow problems."
+                "Raw data isn't enough for stakeholders. Structuring, styling,
+                and formatting Excel exports via code ensures that generated
+                reports are immediately ready for presentation without manual
+                tweaking."
               </p>
             </div>
             <p>
-              By the end of the week, I presented the progress to my mentor and
-              the Accounting Department to gather early feedback, ensuring the
-              development stays aligned with their expectations.
+              A significant portion of my time was spent polishing the layouts
+              of these generated Excel files: adjusting column widths,
+              formatting currency strings, and ensuring headers were bold and
+              clear.
             </p>
           </div>
 
@@ -1058,12 +1061,12 @@
                 <div class="d-name">Monday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-init">Setup</span>
-                <h4>Project Initialization</h4>
+                <span class="day-tag tag-init">Feature</span>
+                <h4>Dashboard Export</h4>
                 <p>
-                  Initialized the React.js project repository. Set up the
-                  Supabase project and configured the initial PostgreSQL
-                  database schema based on the asset management requirements.
+                  Implemented the export button for the Dashboard. Focused on
+                  aggregating the summary data and polishing the layout of the
+                  resulting Excel file for quick stakeholder review.
                 </p>
               </div>
             </div>
@@ -1074,12 +1077,12 @@
                 <div class="d-name">Tuesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Frontend Development Kickoff</h4>
+                <span class="day-tag tag-task">Logic</span>
+                <h4>Asset Inventory Filters</h4>
                 <p>
-                  Started frontend development. Configured Tailwind CSS within
-                  the React environment and began building the core layout
-                  components like the navigation and main containers.
+                  Added the export button for the Asset Inventory. Developed
+                  custom filter logic so the accounting team can export specific
+                  categories, and polished the Excel layout.
                 </p>
               </div>
             </div>
@@ -1090,12 +1093,13 @@
                 <div class="d-name">Wednesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>UI Components</h4>
+                <span class="day-tag tag-shadow">Formatting</span>
+                <h4>Downpayment Export</h4>
                 <p>
-                  Continued frontend development. Focused on creating reusable
-                  UI components such as tables for asset listing, forms for
-                  adding new assets, and data cards.
+                  Focused on the Downpayment module. Added the export
+                  functionality and ensured the Excel file layout properly
+                  displayed terms, amounts, and dates in correct spreadsheet
+                  formats.
                 </p>
               </div>
             </div>
@@ -1106,12 +1110,12 @@
                 <div class="d-name">Thursday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Refining the Interface</h4>
+                <span class="day-tag tag-collab">Formatting</span>
+                <h4>Monthly Depreciation Export</h4>
                 <p>
-                  Continued frontend development. Worked on state management for
-                  the forms, refined the Tailwind CSS styling for better
-                  responsiveness, and added placeholder data for visual testing.
+                  Implemented exporting for the Monthly Depreciation page. Spent
+                  time formatting the Excel columns to handle currency arrays
+                  and percentage values accurately.
                 </p>
               </div>
             </div>
@@ -1122,13 +1126,12 @@
                 <div class="d-name">Friday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-collab">Feedback</span>
-                <h4>Consultation & Review</h4>
+                <span class="day-tag tag-review">QA & Review</span>
+                <h4>Logs Export & System Check</h4>
                 <p>
-                  Continued frontend development in the morning. Later, held a
-                  consultation with my mentor and presented the initial UI to
-                  the Accounting Department to gather feedback on usability and
-                  layout.
+                  Added the final export button for the system Logs. Conducted a
+                  full QA pass on all generated Excel files to verify data
+                  integrity and layout consistency across the board.
                 </p>
               </div>
             </div>
@@ -1149,17 +1152,15 @@
               "
             >
               Technical and professional competencies developed or activated
-              during Week 3:
+              during Week 9:
             </p>
             <div class="skills-grid">
-              <div class="skill-chip"><span>React.js</span></div>
-              <div class="skill-chip"><span>Tailwind CSS</span></div>
-              <div class="skill-chip"><span>Supabase Setup</span></div>
-              <div class="skill-chip"><span>PostgreSQL</span></div>
-              <div class="skill-chip"><span>Frontend Layout</span></div>
-              <div class="skill-chip"><span>UI/UX Prototyping</span></div>
-              <div class="skill-chip"><span>Mentorship Review</span></div>
-              <div class="skill-chip"><span>Cross-dept Consultation</span></div>
+              <div class="skill-chip"><span>Data Exporting</span></div>
+              <div class="skill-chip"><span>Excel Generation</span></div>
+              <div class="skill-chip"><span>Data Filtering</span></div>
+              <div class="skill-chip"><span>Report Formatting</span></div>
+              <div class="skill-chip"><span>API Data Parsing</span></div>
+              <div class="skill-chip"><span>Stakeholder Reporting</span></div>
             </div>
           </div>
 
@@ -1173,31 +1174,20 @@
               <div class="c-num">[01]</div>
               <p>
                 <strong style="color: var(--white)"
-                  >Initial Configuration</strong
+                  >Excel Formatting from Code</strong
                 >
-                — Connecting the React application seamlessly with Supabase
-                required careful attention to security policies and environment
-                variables to ensure safe API communication.
+                — Controlling column widths, bold headers, and specific cell
+                data types (like currency vs. string) programmatically required
+                deep dives into the export library's documentation.
               </p>
             </div>
             <div class="c-item">
               <div class="c-num">[02]</div>
               <p>
-                <strong style="color: var(--white)"
-                  >Component Architecture</strong
-                >
-                — Designing reusable React components from the start was
-                challenging but necessary to keep the codebase clean and
-                maintainable as the project complexity scales up.
-              </p>
-            </div>
-            <div class="c-item">
-              <div class="c-num">[03]</div>
-              <p>
-                <strong style="color: var(--white)">Actionable Feedback</strong>
-                — Translating raw feedback and suggestions from the Accounting
-                Department into viable frontend adjustments required both
-                technical problem-solving and clear communication.
+                <strong style="color: var(--white)">Filter Logic</strong>
+                — Building a dynamic filter for the Asset Inventory export meant
+                ensuring the UI state correctly matched the exact subset of data
+                queried from the database before conversion to Excel.
               </p>
             </div>
           </div>
@@ -1209,25 +1199,24 @@
               <h2>Reflections & Next Steps</h2>
             </div>
             <p>
-              Week 3 was immensely fulfilling. Moving from the theoretical
-              planning phase to writing functional code always feels like a leap
-              forward. Watching the application's interface come alive through
-              React and Tailwind CSS provided a significant confidence boost in
-              my development abilities.
+              Completing the export functionality marks a massive milestone for
+              this application. It essentially bridges the gap between our
+              modern web app and the traditional spreadsheet-heavy workflows
+              that accounting departments rely on. Seeing raw database rows turn
+              into cleanly formatted, professional Excel files was incredibly
+              satisfying.
             </p>
             <p>
-              The consultation session with the Accounting Department on Friday
-              was pivotal. It validated some of my design choices while
-              highlighting user workflow preferences I hadn't considered. This
-              proved to me that frequent stakeholder communication is just as
-              critical as the code itself.
+              The system is now fully functional for reporting. The next phase
+              involves tying up any loose ends and preparing the system for
+              official handoff.
             </p>
             <div class="callout">
-              <div class="callout-label">// week 4 objectives</div>
+              <div class="callout-label">// week 10 objectives</div>
               <p>
-                Integrate the completed frontend UI with the Supabase backend to
-                enable actual CRUD (Create, Read, Update, Delete) operations,
-                and apply the accounting feedback into the user interface.
+                Final system review, bug squashing, minor UI tweaks, and
+                beginning the documentation process for eventual deployment and
+                handoff to the IT and Accounting teams.
               </p>
             </div>
           </div>
@@ -1265,7 +1254,7 @@
               ><span class="v">Amante Villacorta | IT Officer</span>
             </div>
             <div class="info-row">
-              <span class="k">Hours</span><span class="v">135 / 495 hrs</span>
+              <span class="k">Hours</span><span class="v">369 / 495 hrs</span>
             </div>
           </div>
 
@@ -1283,37 +1272,37 @@
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Technical Skills</span
-                ><span class="pct">75%</span>
+                ><span class="pct">98%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 98%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Task Completion</span
-                ><span class="pct">85%</span>
+                ><span class="pct">99%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 85%"></div>
+                <div class="prog-fill" style="width: 99%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Team Integration</span
-                ><span class="pct">80%</span>
+                ><span class="pct">95%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 80%"></div>
+                <div class="prog-fill" style="width: 95%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Confidence Level</span
-                ><span class="pct">75%</span>
+                ><span class="pct">98%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 98%"></div>
               </div>
             </div>
           </div>
@@ -1322,19 +1311,19 @@
             <div class="s-card-title">// highlights</div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Initialized React & Supabase backend.</p>
+              <p>Implemented Dashboard Excel export.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Built UI layout with Tailwind CSS.</p>
+              <p>Created dynamic filters for Asset exports.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Developed core frontend components.</p>
+              <p>Programmatically styled Excel file layouts.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Consulted with Accounting for feedback.</p>
+              <p>Completed exports for all major modules.</p>
             </div>
           </div>
         </aside>
@@ -1343,7 +1332,7 @@
 
     <footer>
       <div class="footer-left">
-        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 03</div>
+        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 09</div>
         <div style="margin-top: 0.2rem">Bicol University · 2025-2026</div>
       </div>
     </footer>

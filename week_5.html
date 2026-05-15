@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OJT // Week 03 Field Report</title>
+    <title>OJT // Week 05 Field Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
@@ -870,9 +870,9 @@
           <div class="dropdown-content">
             <a href="index.html">week_01</a>
             <a href="week_2.html">week_02</a>
-            <a href="week_3.html" class="active">week_03</a>
+            <a href="week_3.html">week_03</a>
             <a href="week_4.html">week_04</a>
-            <a href="week_5.html">week_05</a>
+            <a href="week_5.html" class="active">week_05</a>
             <a href="week_6.html">week_06</a>
             <a href="week_7.html">week_07</a>
             <a href="week_8.html">week_08</a>
@@ -891,7 +891,7 @@
       <section class="hero">
         <div class="hero-eyebrow">
           <div class="line"></div>
-          <span>On-the-Job Training · Week 03 of [N]</span>
+          <span>On-the-Job Training · Week 05 of [N]</span>
         </div>
 
         <div class="hero-meta">
@@ -909,7 +909,7 @@
           </div>
           <div class="hero-meta-item">
             <span class="key">Period</span
-            ><span class="val">March 9 – 13, 2026</span>
+            ><span class="val">March 23 – 27, 2026</span>
           </div>
           <div class="hero-meta-item">
             <span class="key">Hours Logged</span><span class="val">45 hrs</span>
@@ -921,10 +921,11 @@
         </div>
 
         <p class="hero-intro">
-          This week was highly productive, marking the shift from planning into
-          active development. My primary objective was initiating the groundwork
-          for the Asset Management System by configuring our backend and pushing
-          forward with building the frontend interface.
+          This week was dedicated to backend development for the Asset
+          Management System. I focused on setting up Supabase and PostgreSQL,
+          structuring the database schema, handling user roles, and performing
+          initial backend testing to ensure a smooth flow of data from our
+          frontend.
         </p>
       </section>
 
@@ -937,7 +938,6 @@
             alt="Dave Gabriel M. Jazmin"
             onerror="this.classList.add('errored')"
           />
-          <!-- Fallback shown if image fails -->
           <div class="img-fallback">
             <div
               style="
@@ -995,14 +995,14 @@
             </div>
             <div class="pd-item">
               <span class="pd-key">Period</span>
-              <span class="pd-val">March 9 – 13, 2026</span>
+              <span class="pd-val">March 23 – 27, 2026</span>
             </div>
             <div class="pd-item">
               <span class="pd-key">Hours Rendered</span>
               <span class="pd-val">45 hrs</span>
             </div>
           </div>
-          <div class="profile-badge">OJT Week 03 — In Progress</div>
+          <div class="profile-badge">OJT Week 05 — In Progress</div>
         </div>
       </div>
 
@@ -1016,32 +1016,35 @@
               <h2>Week Overview</h2>
             </div>
             <p>
-              Week 3 was heavily focused on the actual implementation of the
-              <strong>Asset Management System</strong>. With the requirements
-              gathered and the tech stack selected, it was time to dive into
-              writing code.
+              Week 5 marked a deep dive into the backend architecture of our
+              <strong>Asset Management System</strong>. With the frontend
+              foundation laid out, it was crucial to establish a robust and
+              secure database to handle the company's asset records.
             </p>
             <p>
-              I kicked off the week by setting up the foundational architecture,
-              specifically initializing a <strong>React.js</strong> project and
-              configuring the <strong>PostgreSQL</strong> database via
-              <strong>Supabase</strong>. The bulk of the week was then dedicated
-              to building the frontend user interface using React and
-              <strong>Tailwind CSS</strong> to ensure a clean and responsive
-              design.
+              I began by fully configuring <strong>Supabase</strong> and its
+              underlying <strong>PostgreSQL</strong> database. This involved
+              setting up authentication and inputting specific credentials for
+              distinct roles: the <strong>Admin</strong> and the
+              <strong>Accountant</strong>. Following that, I worked on the
+              database schema planning and relied on
+              <strong>AI (Gemini)</strong> to assist in writing and optimizing
+              the database queries and tables.
             </p>
             <div class="callout">
               <div class="callout-label">// key insight</div>
               <p>
-                "Building a user interface isn't just about making it look good;
-                it's about continuously validating the design with end-users to
-                ensure it actually solves their workflow problems."
+                "A well-structured database schema is the backbone of any
+                application. Using AI accelerates the writing process, but
+                verifying relations and constraints is where the real
+                engineering happens."
               </p>
             </div>
             <p>
-              By the end of the week, I presented the progress to my mentor and
-              the Accounting Department to gather early feedback, ensuring the
-              development stays aligned with their expectations.
+              The week wrapped up with practical testing—successfully adding an
+              asset from the frontend to the newly configured database,
+              confirming that our client-server communication was fully
+              operational.
             </p>
           </div>
 
@@ -1058,12 +1061,12 @@
                 <div class="d-name">Monday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-init">Setup</span>
-                <h4>Project Initialization</h4>
+                <span class="day-tag tag-init">Backend</span>
+                <h4>Supabase/PostgreSQL Setup</h4>
                 <p>
-                  Initialized the React.js project repository. Set up the
-                  Supabase project and configured the initial PostgreSQL
-                  database schema based on the asset management requirements.
+                  Started the week by setting up the Supabase project
+                  environment and configuring the PostgreSQL database that will
+                  act as the backend for the Asset Management System.
                 </p>
               </div>
             </div>
@@ -1074,12 +1077,12 @@
                 <div class="d-name">Tuesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Frontend Development Kickoff</h4>
+                <span class="day-tag tag-task">Auth & Roles</span>
+                <h4>User Credentials</h4>
                 <p>
-                  Started frontend development. Configured Tailwind CSS within
-                  the React environment and began building the core layout
-                  components like the navigation and main containers.
+                  Focused on user authentication and Role-Based Access Control
+                  (RBAC). Inputted the credentials and established separate
+                  roles for the Admin and the Accountant.
                 </p>
               </div>
             </div>
@@ -1090,12 +1093,12 @@
                 <div class="d-name">Wednesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>UI Components</h4>
+                <span class="day-tag tag-shadow">Planning</span>
+                <h4>Database Initialization</h4>
                 <p>
-                  Continued frontend development. Focused on creating reusable
-                  UI components such as tables for asset listing, forms for
-                  adding new assets, and data cards.
+                  Dedicated the day to initializing plans for the database.
+                  Mapped out the necessary tables, relationships, and data types
+                  required for accurate asset tracking and amortization.
                 </p>
               </div>
             </div>
@@ -1106,12 +1109,12 @@
                 <div class="d-name">Thursday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Refining the Interface</h4>
+                <span class="day-tag tag-collab">Development</span>
+                <h4>AI-Assisted DB Writing</h4>
                 <p>
-                  Continued frontend development. Worked on state management for
-                  the forms, refined the Tailwind CSS styling for better
-                  responsiveness, and added placeholder data for visual testing.
+                  Translated the database plans into actual SQL scripts and
+                  Supabase configurations. Utilized AI (Gemini) to help write,
+                  format, and optimize the database structure efficiently.
                 </p>
               </div>
             </div>
@@ -1122,13 +1125,13 @@
                 <div class="d-name">Friday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-collab">Feedback</span>
-                <h4>Consultation & Review</h4>
+                <span class="day-tag tag-review">Testing</span>
+                <h4>Testing 'Add Asset' Function</h4>
                 <p>
-                  Continued frontend development in the morning. Later, held a
-                  consultation with my mentor and presented the initial UI to
-                  the Accounting Department to gather feedback on usability and
-                  layout.
+                  Conducted end-to-end testing of the system by adding a new
+                  Asset. Verified that the data flows correctly from the
+                  frontend interface and is stored securely in the PostgreSQL
+                  database.
                 </p>
               </div>
             </div>
@@ -1149,17 +1152,16 @@
               "
             >
               Technical and professional competencies developed or activated
-              during Week 3:
+              during Week 5:
             </p>
             <div class="skills-grid">
-              <div class="skill-chip"><span>React.js</span></div>
-              <div class="skill-chip"><span>Tailwind CSS</span></div>
-              <div class="skill-chip"><span>Supabase Setup</span></div>
+              <div class="skill-chip"><span>Supabase</span></div>
               <div class="skill-chip"><span>PostgreSQL</span></div>
-              <div class="skill-chip"><span>Frontend Layout</span></div>
-              <div class="skill-chip"><span>UI/UX Prototyping</span></div>
-              <div class="skill-chip"><span>Mentorship Review</span></div>
-              <div class="skill-chip"><span>Cross-dept Consultation</span></div>
+              <div class="skill-chip"><span>Database Design</span></div>
+              <div class="skill-chip"><span>RBAC (Auth)</span></div>
+              <div class="skill-chip"><span>AI Coding (Gemini)</span></div>
+              <div class="skill-chip"><span>Backend Testing</span></div>
+              <div class="skill-chip"><span>API Integration</span></div>
             </div>
           </div>
 
@@ -1172,32 +1174,19 @@
             <div class="c-item">
               <div class="c-num">[01]</div>
               <p>
-                <strong style="color: var(--white)"
-                  >Initial Configuration</strong
-                >
-                — Connecting the React application seamlessly with Supabase
-                required careful attention to security policies and environment
-                variables to ensure safe API communication.
+                <strong style="color: var(--white)">Role Management</strong> —
+                Ensuring that the Admin and Accountant roles have the exact
+                right permissions without exposing sensitive administrative
+                functions to the wrong user.
               </p>
             </div>
             <div class="c-item">
               <div class="c-num">[02]</div>
               <p>
-                <strong style="color: var(--white)"
-                  >Component Architecture</strong
-                >
-                — Designing reusable React components from the start was
-                challenging but necessary to keep the codebase clean and
-                maintainable as the project complexity scales up.
-              </p>
-            </div>
-            <div class="c-item">
-              <div class="c-num">[03]</div>
-              <p>
-                <strong style="color: var(--white)">Actionable Feedback</strong>
-                — Translating raw feedback and suggestions from the Accounting
-                Department into viable frontend adjustments required both
-                technical problem-solving and clear communication.
+                <strong style="color: var(--white)">Database Relations</strong>
+                — Structuring the tables so that asset details, depreciation
+                history, and user logs are correctly linked required careful
+                planning before execution.
               </p>
             </div>
           </div>
@@ -1209,25 +1198,25 @@
               <h2>Reflections & Next Steps</h2>
             </div>
             <p>
-              Week 3 was immensely fulfilling. Moving from the theoretical
-              planning phase to writing functional code always feels like a leap
-              forward. Watching the application's interface come alive through
-              React and Tailwind CSS provided a significant confidence boost in
-              my development abilities.
+              Setting up the backend this week was deeply satisfying. Moving
+              past the frontend and dealing with real database architecture
+              makes the project feel substantially more complete. Leveraging
+              Gemini AI for writing PostgreSQL queries was a huge time saver,
+              allowing me to focus more on the logic rather than syntax.
             </p>
             <p>
-              The consultation session with the Accounting Department on Friday
-              was pivotal. It validated some of my design choices while
-              highlighting user workflow preferences I hadn't considered. This
-              proved to me that frequent stakeholder communication is just as
-              critical as the code itself.
+              Testing the "Add Asset" functionality and seeing the record show
+              up in Supabase confirmed that my full-stack integration is
+              working. This clears the way for building out the rest of the
+              application's core logic.
             </p>
             <div class="callout">
-              <div class="callout-label">// week 4 objectives</div>
+              <div class="callout-label">// week 6 objectives</div>
               <p>
-                Integrate the completed frontend UI with the Supabase backend to
-                enable actual CRUD (Create, Read, Update, Delete) operations,
-                and apply the accounting feedback into the user interface.
+                Focus on retrieving and displaying the added assets back onto
+                the frontend interface. I plan to implement data tables,
+                real-time fetching, and filtering features for the Accountant
+                role.
               </p>
             </div>
           </div>
@@ -1265,7 +1254,7 @@
               ><span class="v">Amante Villacorta | IT Officer</span>
             </div>
             <div class="info-row">
-              <span class="k">Hours</span><span class="v">135 / 495 hrs</span>
+              <span class="k">Hours</span><span class="v">216 / 495 hrs</span>
             </div>
           </div>
 
@@ -1283,15 +1272,6 @@
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Technical Skills</span
-                ><span class="pct">75%</span>
-              </div>
-              <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
-              </div>
-            </div>
-            <div class="prog-item">
-              <div class="prog-header">
-                <span class="label">Task Completion</span
                 ><span class="pct">85%</span>
               </div>
               <div class="prog-track">
@@ -1300,20 +1280,29 @@
             </div>
             <div class="prog-item">
               <div class="prog-header">
-                <span class="label">Team Integration</span
-                ><span class="pct">80%</span>
+                <span class="label">Task Completion</span
+                ><span class="pct">90%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 80%"></div>
+                <div class="prog-fill" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-header">
+                <span class="label">Team Integration</span
+                ><span class="pct">85%</span>
+              </div>
+              <div class="prog-track">
+                <div class="prog-fill" style="width: 85%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Confidence Level</span
-                ><span class="pct">75%</span>
+                ><span class="pct">85%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 85%"></div>
               </div>
             </div>
           </div>
@@ -1322,19 +1311,19 @@
             <div class="s-card-title">// highlights</div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Initialized React & Supabase backend.</p>
+              <p>Set up Supabase & PostgreSQL backend.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Built UI layout with Tailwind CSS.</p>
+              <p>Configured Admin & Accountant credentials.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Developed core frontend components.</p>
+              <p>Designed and wrote DB schema using Gemini AI.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Consulted with Accounting for feedback.</p>
+              <p>Successfully tested the "Add Asset" feature.</p>
             </div>
           </div>
         </aside>
@@ -1343,7 +1332,7 @@
 
     <footer>
       <div class="footer-left">
-        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 03</div>
+        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 05</div>
         <div style="margin-top: 0.2rem">Bicol University · 2025-2026</div>
       </div>
     </footer>

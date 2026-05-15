@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OJT // Week 03 Field Report</title>
+    <title>OJT // Week 07 Field Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
@@ -870,11 +870,11 @@
           <div class="dropdown-content">
             <a href="index.html">week_01</a>
             <a href="week_2.html">week_02</a>
-            <a href="week_3.html" class="active">week_03</a>
+            <a href="week_3.html">week_03</a>
             <a href="week_4.html">week_04</a>
             <a href="week_5.html">week_05</a>
             <a href="week_6.html">week_06</a>
-            <a href="week_7.html">week_07</a>
+            <a href="week_7.html" class="active">week_07</a>
             <a href="week_8.html">week_08</a>
             <a href="week_9.html">week_09</a>
             <a href="week_10.html">week_10</a>
@@ -891,7 +891,7 @@
       <section class="hero">
         <div class="hero-eyebrow">
           <div class="line"></div>
-          <span>On-the-Job Training · Week 03 of [N]</span>
+          <span>On-the-Job Training · Week 07 of [N]</span>
         </div>
 
         <div class="hero-meta">
@@ -909,10 +909,10 @@
           </div>
           <div class="hero-meta-item">
             <span class="key">Period</span
-            ><span class="val">March 9 – 13, 2026</span>
+            ><span class="val">April 6 – 10, 2026</span>
           </div>
           <div class="hero-meta-item">
-            <span class="key">Hours Logged</span><span class="val">45 hrs</span>
+            <span class="key">Hours Logged</span><span class="val">36 hrs</span>
           </div>
           <div class="hero-meta-item">
             <span class="key">Supervisor</span
@@ -921,10 +921,12 @@
         </div>
 
         <p class="hero-intro">
-          This week was highly productive, marking the shift from planning into
-          active development. My primary objective was initiating the groundwork
-          for the Asset Management System by configuring our backend and pushing
-          forward with building the frontend interface.
+          Week 7 focused on tightening security and expanding the system's
+          capabilities. I implemented a Security PIN for the head accountant to
+          protect sensitive actions, integrated the database for the new
+          Downpayment page, and heavily prioritized continuous feedback loops
+          with the Accounting Department to ensure the tool perfectly matches
+          their workflow.
         </p>
       </section>
 
@@ -937,7 +939,6 @@
             alt="Dave Gabriel M. Jazmin"
             onerror="this.classList.add('errored')"
           />
-          <!-- Fallback shown if image fails -->
           <div class="img-fallback">
             <div
               style="
@@ -995,14 +996,14 @@
             </div>
             <div class="pd-item">
               <span class="pd-key">Period</span>
-              <span class="pd-val">March 9 – 13, 2026</span>
+              <span class="pd-val">April 6 – 10, 2026</span>
             </div>
             <div class="pd-item">
               <span class="pd-key">Hours Rendered</span>
-              <span class="pd-val">45 hrs</span>
+              <span class="pd-val">36 hrs</span>
             </div>
           </div>
-          <div class="profile-badge">OJT Week 03 — In Progress</div>
+          <div class="profile-badge">OJT Week 07 — In Progress</div>
         </div>
       </div>
 
@@ -1016,32 +1017,35 @@
               <h2>Week Overview</h2>
             </div>
             <p>
-              Week 3 was heavily focused on the actual implementation of the
-              <strong>Asset Management System</strong>. With the requirements
-              gathered and the tech stack selected, it was time to dive into
-              writing code.
+              This week was driven by the need for heightened security and
+              expanding features within the
+              <strong>Asset Management System</strong>. With the core CRUD
+              features built out last week, it was critical to start protecting
+              certain actions.
             </p>
             <p>
-              I kicked off the week by setting up the foundational architecture,
-              specifically initializing a <strong>React.js</strong> project and
-              configuring the <strong>PostgreSQL</strong> database via
-              <strong>Supabase</strong>. The bulk of the week was then dedicated
-              to building the frontend user interface using React and
-              <strong>Tailwind CSS</strong> to ensure a clean and responsive
-              design.
+              I began by implementing a
+              <strong>Security PIN mechanism</strong> specifically tailored for
+              the head accountant. This ensures that sensitive deletions or
+              modifications cannot be done accidentally or by unauthorized
+              personnel. Simultaneously, I expanded the application by
+              structuring and integrating the backend database for a new
+              <strong>Downpayment Page</strong>.
             </p>
             <div class="callout">
               <div class="callout-label">// key insight</div>
               <p>
-                "Building a user interface isn't just about making it look good;
-                it's about continuously validating the design with end-users to
-                ensure it actually solves their workflow problems."
+                "Security isn't just about blocking bad actors; it's also about
+                building a workflow that prevents accidental data loss from
+                legitimate users. Constant feedback ensures that security
+                doesn't compromise usability."
               </p>
             </div>
             <p>
-              By the end of the week, I presented the progress to my mentor and
-              the Accounting Department to gather early feedback, ensuring the
-              development stays aligned with their expectations.
+              Throughout the week, I maintained a tight feedback loop with the
+              Accounting Department, asking for their input early and often to
+              guarantee that the new database structures and security flows made
+              sense for their daily operations.
             </p>
           </div>
 
@@ -1058,12 +1062,13 @@
                 <div class="d-name">Monday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-init">Setup</span>
-                <h4>Project Initialization</h4>
+                <span class="day-tag tag-init">Security</span>
+                <h4>Security PIN Implementation</h4>
                 <p>
-                  Initialized the React.js project repository. Set up the
-                  Supabase project and configured the initial PostgreSQL
-                  database schema based on the asset management requirements.
+                  Focused on adding access control to critical actions.
+                  Implemented a Security PIN prompt tailored specifically for
+                  the Head Accountant to authorize sensitive modifications or
+                  deletions.
                 </p>
               </div>
             </div>
@@ -1074,12 +1079,12 @@
                 <div class="d-name">Tuesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Frontend Development Kickoff</h4>
+                <span class="day-tag tag-collab">Feedback</span>
+                <h4>Accounting Consultation</h4>
                 <p>
-                  Started frontend development. Configured Tailwind CSS within
-                  the React environment and began building the core layout
-                  components like the navigation and main containers.
+                  Presented the new Security PIN feature to the Accounting
+                  Department. Gathered their feedback on the user flow to ensure
+                  the security step doesn't become an annoying bottleneck.
                 </p>
               </div>
             </div>
@@ -1091,11 +1096,11 @@
               </div>
               <div class="day-right">
                 <span class="day-tag tag-task">Development</span>
-                <h4>UI Components</h4>
+                <h4>Downpayment DB Setup</h4>
                 <p>
-                  Continued frontend development. Focused on creating reusable
-                  UI components such as tables for asset listing, forms for
-                  adding new assets, and data cards.
+                  Shifted focus to a new feature module. Designed and
+                  implemented the Supabase database schema required to handle
+                  the data for the new Downpayment page.
                 </p>
               </div>
             </div>
@@ -1106,12 +1111,13 @@
                 <div class="d-name">Thursday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Refining the Interface</h4>
+                <span class="day-tag tag-review">Testing</span>
+                <h4>Integration & QA Testing</h4>
                 <p>
-                  Continued frontend development. Worked on state management for
-                  the forms, refined the Tailwind CSS styling for better
-                  responsiveness, and added placeholder data for visual testing.
+                  Conducted rigorous testing on the newly created Downpayment
+                  database functions. Verified that the React frontend
+                  successfully integrates with the backend without data leaks or
+                  errors.
                 </p>
               </div>
             </div>
@@ -1122,13 +1128,12 @@
                 <div class="d-name">Friday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-collab">Feedback</span>
-                <h4>Consultation & Review</h4>
+                <span class="day-tag tag-shadow">Review</span>
+                <h4>Final Iterative Feedback</h4>
                 <p>
-                  Continued frontend development in the morning. Later, held a
-                  consultation with my mentor and presented the initial UI to
-                  the Accounting Department to gather feedback on usability and
-                  layout.
+                  Conducted a second review session with the Accounting
+                  Department. Showcased the working Downpayment data flow and
+                  finalized their feedback before closing out the week's tasks.
                 </p>
               </div>
             </div>
@@ -1149,17 +1154,15 @@
               "
             >
               Technical and professional competencies developed or activated
-              during Week 3:
+              during Week 7:
             </p>
             <div class="skills-grid">
-              <div class="skill-chip"><span>React.js</span></div>
-              <div class="skill-chip"><span>Tailwind CSS</span></div>
-              <div class="skill-chip"><span>Supabase Setup</span></div>
-              <div class="skill-chip"><span>PostgreSQL</span></div>
-              <div class="skill-chip"><span>Frontend Layout</span></div>
-              <div class="skill-chip"><span>UI/UX Prototyping</span></div>
-              <div class="skill-chip"><span>Mentorship Review</span></div>
-              <div class="skill-chip"><span>Cross-dept Consultation</span></div>
+              <div class="skill-chip"><span>Access Control</span></div>
+              <div class="skill-chip"><span>Security PIN Logic</span></div>
+              <div class="skill-chip"><span>Database Integration</span></div>
+              <div class="skill-chip"><span>QA Testing</span></div>
+              <div class="skill-chip"><span>User Feedback Loop</span></div>
+              <div class="skill-chip"><span>Supabase Auth</span></div>
             </div>
           </div>
 
@@ -1173,31 +1176,20 @@
               <div class="c-num">[01]</div>
               <p>
                 <strong style="color: var(--white)"
-                  >Initial Configuration</strong
+                  >Security vs. Usability</strong
                 >
-                — Connecting the React application seamlessly with Supabase
-                required careful attention to security policies and environment
-                variables to ensure safe API communication.
+                — Designing the Security PIN to be strict enough to prevent
+                unauthorized changes, but smooth enough not to annoy the Head
+                Accountant during bulk operations.
               </p>
             </div>
             <div class="c-item">
               <div class="c-num">[02]</div>
               <p>
-                <strong style="color: var(--white)"
-                  >Component Architecture</strong
-                >
-                — Designing reusable React components from the start was
-                challenging but necessary to keep the codebase clean and
-                maintainable as the project complexity scales up.
-              </p>
-            </div>
-            <div class="c-item">
-              <div class="c-num">[03]</div>
-              <p>
-                <strong style="color: var(--white)">Actionable Feedback</strong>
-                — Translating raw feedback and suggestions from the Accounting
-                Department into viable frontend adjustments required both
-                technical problem-solving and clear communication.
+                <strong style="color: var(--white)">Database Design</strong>
+                — Structuring the Downpayment schema required careful thought to
+                ensure it aligned correctly with the existing Asset and
+                Amortization tables without creating redundant data.
               </p>
             </div>
           </div>
@@ -1209,25 +1201,24 @@
               <h2>Reflections & Next Steps</h2>
             </div>
             <p>
-              Week 3 was immensely fulfilling. Moving from the theoretical
-              planning phase to writing functional code always feels like a leap
-              forward. Watching the application's interface come alive through
-              React and Tailwind CSS provided a significant confidence boost in
-              my development abilities.
+              This week heavily reinforced the importance of the
+              developer-client relationship. By asking for feedback twice this
+              week, I avoided going down a development rabbit hole that the
+              Accounting Department wouldn't actually use. The Security PIN was
+              a great exercise in custom access control beyond standard user
+              roles.
             </p>
             <p>
-              The consultation session with the Accounting Department on Friday
-              was pivotal. It validated some of my design choices while
-              highlighting user workflow preferences I hadn't considered. This
-              proved to me that frequent stakeholder communication is just as
-              critical as the code itself.
+              Testing the database integration for the Downpayment page ensures
+              the foundation is rock solid before building out the complex
+              frontend views.
             </p>
             <div class="callout">
-              <div class="callout-label">// week 4 objectives</div>
+              <div class="callout-label">// week 8 objectives</div>
               <p>
-                Integrate the completed frontend UI with the Supabase backend to
-                enable actual CRUD (Create, Read, Update, Delete) operations,
-                and apply the accounting feedback into the user interface.
+                Next week, I aim to fully develop the frontend interface for the
+                Downpayment page, bind it to the newly tested database, and look
+                into generating financial reports or dashboard analytics.
               </p>
             </div>
           </div>
@@ -1265,7 +1256,7 @@
               ><span class="v">Amante Villacorta | IT Officer</span>
             </div>
             <div class="info-row">
-              <span class="k">Hours</span><span class="v">135 / 495 hrs</span>
+              <span class="k">Hours</span><span class="v">279 / 495 hrs</span>
             </div>
           </div>
 
@@ -1283,37 +1274,37 @@
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Technical Skills</span
-                ><span class="pct">75%</span>
+                ><span class="pct">92%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 92%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Task Completion</span
-                ><span class="pct">85%</span>
+                ><span class="pct">98%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 85%"></div>
+                <div class="prog-fill" style="width: 98%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Team Integration</span
-                ><span class="pct">80%</span>
+                ><span class="pct">90%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 80%"></div>
+                <div class="prog-fill" style="width: 90%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Confidence Level</span
-                ><span class="pct">75%</span>
+                ><span class="pct">92%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 92%"></div>
               </div>
             </div>
           </div>
@@ -1322,19 +1313,19 @@
             <div class="s-card-title">// highlights</div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Initialized React & Supabase backend.</p>
+              <p>Implemented Security PIN access control.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Built UI layout with Tailwind CSS.</p>
+              <p>Gathered iterative feedback from Accounting.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Developed core frontend components.</p>
+              <p>Built database schema for Downpayment page.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Consulted with Accounting for feedback.</p>
+              <p>Tested database integration successfully.</p>
             </div>
           </div>
         </aside>
@@ -1343,7 +1334,7 @@
 
     <footer>
       <div class="footer-left">
-        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 03</div>
+        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 07</div>
         <div style="margin-top: 0.2rem">Bicol University · 2025-2026</div>
       </div>
     </footer>

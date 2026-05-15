@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OJT // Week 03 Field Report</title>
+    <title>OJT // Week 12 Field Report</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
@@ -870,7 +870,7 @@
           <div class="dropdown-content">
             <a href="index.html">week_01</a>
             <a href="week_2.html">week_02</a>
-            <a href="week_3.html" class="active">week_03</a>
+            <a href="week_3.html">week_03</a>
             <a href="week_4.html">week_04</a>
             <a href="week_5.html">week_05</a>
             <a href="week_6.html">week_06</a>
@@ -879,7 +879,7 @@
             <a href="week_9.html">week_09</a>
             <a href="week_10.html">week_10</a>
             <a href="week_11.html">week_11</a>
-            <a href="week_12.html">week_12</a>
+            <a href="week_12.html" class="active">week_12</a>
           </div>
         </li>
         <li><a href="about.html">about.me</a></li>
@@ -891,7 +891,7 @@
       <section class="hero">
         <div class="hero-eyebrow">
           <div class="line"></div>
-          <span>On-the-Job Training · Week 03 of [N]</span>
+          <span>On-the-Job Training · Week 12 of [N]</span>
         </div>
 
         <div class="hero-meta">
@@ -909,7 +909,7 @@
           </div>
           <div class="hero-meta-item">
             <span class="key">Period</span
-            ><span class="val">March 9 – 13, 2026</span>
+            ><span class="val">May 11 – 15, 2026</span>
           </div>
           <div class="hero-meta-item">
             <span class="key">Hours Logged</span><span class="val">45 hrs</span>
@@ -921,10 +921,11 @@
         </div>
 
         <p class="hero-intro">
-          This week was highly productive, marking the shift from planning into
-          active development. My primary objective was initiating the groundwork
-          for the Asset Management System by configuring our backend and pushing
-          forward with building the frontend interface.
+          Week 12 marked the official handoff and closure of my OJT journey.
+          This final week focused on conducting live production testing,
+          presenting the ultimate demonstration to the Accounting Department,
+          creating the User Manual, and finally receiving my Certificate of
+          Completion.
         </p>
       </section>
 
@@ -937,7 +938,6 @@
             alt="Dave Gabriel M. Jazmin"
             onerror="this.classList.add('errored')"
           />
-          <!-- Fallback shown if image fails -->
           <div class="img-fallback">
             <div
               style="
@@ -995,14 +995,23 @@
             </div>
             <div class="pd-item">
               <span class="pd-key">Period</span>
-              <span class="pd-val">March 9 – 13, 2026</span>
+              <span class="pd-val">May 11 – 15, 2026</span>
             </div>
             <div class="pd-item">
               <span class="pd-key">Hours Rendered</span>
               <span class="pd-val">45 hrs</span>
             </div>
           </div>
-          <div class="profile-badge">OJT Week 03 — In Progress</div>
+          <div
+            class="profile-badge"
+            style="
+              color: var(--accent);
+              border-color: rgba(0, 212, 255, 0.3);
+              background: rgba(0, 212, 255, 0.07);
+            "
+          >
+            OJT Week 12 — Completed & Certified
+          </div>
         </div>
       </div>
 
@@ -1016,32 +1025,35 @@
               <h2>Week Overview</h2>
             </div>
             <p>
-              Week 3 was heavily focused on the actual implementation of the
-              <strong>Asset Management System</strong>. With the requirements
-              gathered and the tech stack selected, it was time to dive into
-              writing code.
+              The final week was all about ensuring the
+              <strong>Asset Management System</strong> transitions smoothly from
+              the creator's hands into the end-users' daily workflow. The system
+              was now fully deployed, but its real test was operating smoothly
+              in the live production environment.
             </p>
             <p>
-              I kicked off the week by setting up the foundational architecture,
-              specifically initializing a <strong>React.js</strong> project and
-              configuring the <strong>PostgreSQL</strong> database via
-              <strong>Supabase</strong>. The bulk of the week was then dedicated
-              to building the frontend user interface using React and
-              <strong>Tailwind CSS</strong> to ensure a clean and responsive
-              design.
+              I conducted an extensive test run directly on the deployed server,
+              mimicking day-to-day operations to ensure stability. Following
+              this, I orchestrated a final, formal demonstration of the system's
+              capabilities to the Accounting Department, walking them through
+              the workflows, reporting, and security features we had built over
+              the last couple of months.
             </p>
             <div class="callout">
               <div class="callout-label">// key insight</div>
               <p>
-                "Building a user interface isn't just about making it look good;
-                it's about continuously validating the design with end-users to
-                ensure it actually solves their workflow problems."
+                "Great software requires great documentation. Building the
+                system is only half the battle; ensuring the users know how to
+                operate it confidently guarantees the project's long-term
+                success."
               </p>
             </div>
             <p>
-              By the end of the week, I presented the progress to my mentor and
-              the Accounting Department to gather early feedback, ensuring the
-              development stays aligned with their expectations.
+              To cement this handoff, I dedicated time to writing a
+              comprehensive, easy-to-understand <strong>User Manual</strong>.
+              The week, and my OJT, formally concluded with the release of my
+              Certificate of Completion from NCT Transnational Corp., marking a
+              highly successful end to this chapter.
             </p>
           </div>
 
@@ -1058,12 +1070,13 @@
                 <div class="d-name">Monday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-init">Setup</span>
-                <h4>Project Initialization</h4>
+                <span class="day-tag tag-review">QA Testing</span>
+                <h4>Deployed System Testing</h4>
                 <p>
-                  Initialized the React.js project repository. Set up the
-                  Supabase project and configured the initial PostgreSQL
-                  database schema based on the asset management requirements.
+                  Monitored and tested the newly deployed application on the
+                  company's live server. Ensured that database connections, API
+                  latency, and real-time updates operated smoothly under
+                  production conditions.
                 </p>
               </div>
             </div>
@@ -1074,12 +1087,13 @@
                 <div class="d-name">Tuesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Frontend Development Kickoff</h4>
+                <span class="day-tag tag-collab">Presentation</span>
+                <h4>Final Demonstration</h4>
                 <p>
-                  Started frontend development. Configured Tailwind CSS within
-                  the React environment and began building the core layout
-                  components like the navigation and main containers.
+                  Conducted the formal final demonstration of the complete Asset
+                  Management System for the Accounting Department. Highlighted
+                  the automation features, dashboard analytics, and secure data
+                  exports.
                 </p>
               </div>
             </div>
@@ -1090,12 +1104,13 @@
                 <div class="d-name">Wednesday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>UI Components</h4>
+                <span class="day-tag tag-shadow">Validation</span>
+                <h4>System Test Run</h4>
                 <p>
-                  Continued frontend development. Focused on creating reusable
-                  UI components such as tables for asset listing, forms for
-                  adding new assets, and data cards.
+                  Supervised a "test run" day where the Accounting team actively
+                  inputted real asset data into the live system. Provided
+                  on-the-spot support and validated that all modules worked
+                  flawlessly.
                 </p>
               </div>
             </div>
@@ -1106,12 +1121,13 @@
                 <div class="d-name">Thursday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-task">Development</span>
-                <h4>Refining the Interface</h4>
+                <span class="day-tag tag-task">Documentation</span>
+                <h4>Creating the Manual</h4>
                 <p>
-                  Continued frontend development. Worked on state management for
-                  the forms, refined the Tailwind CSS styling for better
-                  responsiveness, and added placeholder data for visual testing.
+                  Authored a comprehensive, non-technical User Manual.
+                  Documented step-by-step instructions with screenshots for
+                  adding assets, exporting reports, and handling security access
+                  controls.
                 </p>
               </div>
             </div>
@@ -1122,13 +1138,12 @@
                 <div class="d-name">Friday</div>
               </div>
               <div class="day-right">
-                <span class="day-tag tag-collab">Feedback</span>
-                <h4>Consultation & Review</h4>
+                <span class="day-tag tag-init">Conclusion</span>
+                <h4>Certificate of Completion</h4>
                 <p>
-                  Continued frontend development in the morning. Later, held a
-                  consultation with my mentor and presented the initial UI to
-                  the Accounting Department to gather feedback on usability and
-                  layout.
+                  Wrapped up final administrative tasks, surrendered IT access
+                  credentials, and formally received my Certificate of
+                  Completion from the management. OJT officially concluded.
                 </p>
               </div>
             </div>
@@ -1149,17 +1164,15 @@
               "
             >
               Technical and professional competencies developed or activated
-              during Week 3:
+              during Week 12:
             </p>
             <div class="skills-grid">
-              <div class="skill-chip"><span>React.js</span></div>
-              <div class="skill-chip"><span>Tailwind CSS</span></div>
-              <div class="skill-chip"><span>Supabase Setup</span></div>
-              <div class="skill-chip"><span>PostgreSQL</span></div>
-              <div class="skill-chip"><span>Frontend Layout</span></div>
-              <div class="skill-chip"><span>UI/UX Prototyping</span></div>
-              <div class="skill-chip"><span>Mentorship Review</span></div>
-              <div class="skill-chip"><span>Cross-dept Consultation</span></div>
+              <div class="skill-chip"><span>Production Testing</span></div>
+              <div class="skill-chip"><span>User Training</span></div>
+              <div class="skill-chip"><span>System Demonstration</span></div>
+              <div class="skill-chip"><span>Technical Documentation</span></div>
+              <div class="skill-chip"><span>Manual Creation</span></div>
+              <div class="skill-chip"><span>Project Handoff</span></div>
             </div>
           </div>
 
@@ -1173,31 +1186,20 @@
               <div class="c-num">[01]</div>
               <p>
                 <strong style="color: var(--white)"
-                  >Initial Configuration</strong
+                  >Writing for Non-Technical Users</strong
                 >
-                — Connecting the React application seamlessly with Supabase
-                required careful attention to security policies and environment
-                variables to ensure safe API communication.
+                — Drafting the User Manual required me to abandon developer
+                jargon and explain system workflows in simple, accessible
+                language for the Accounting team.
               </p>
             </div>
             <div class="c-item">
               <div class="c-num">[02]</div>
               <p>
-                <strong style="color: var(--white)"
-                  >Component Architecture</strong
-                >
-                — Designing reusable React components from the start was
-                challenging but necessary to keep the codebase clean and
-                maintainable as the project complexity scales up.
-              </p>
-            </div>
-            <div class="c-item">
-              <div class="c-num">[03]</div>
-              <p>
-                <strong style="color: var(--white)">Actionable Feedback</strong>
-                — Translating raw feedback and suggestions from the Accounting
-                Department into viable frontend adjustments required both
-                technical problem-solving and clear communication.
+                <strong style="color: var(--white)">Live Data Handling</strong>
+                — Overseeing the test run meant carefully ensuring that the real
+                accounting data inputted by the team wasn't accidentally
+                corrupted during their learning curve.
               </p>
             </div>
           </div>
@@ -1209,25 +1211,25 @@
               <h2>Reflections & Next Steps</h2>
             </div>
             <p>
-              Week 3 was immensely fulfilling. Moving from the theoretical
-              planning phase to writing functional code always feels like a leap
-              forward. Watching the application's interface come alive through
-              React and Tailwind CSS provided a significant confidence boost in
-              my development abilities.
+              Reflecting on these past 12 weeks, the transformation is
+              incredible. I started by touring a container yard and learning to
+              configure a simple Captive Portal, and I finished by deploying a
+              fully functional, custom-built, full-stack software application
+              that a corporate accounting department now uses daily.
             </p>
             <p>
-              The consultation session with the Accounting Department on Friday
-              was pivotal. It validated some of my design choices while
-              highlighting user workflow preferences I hadn't considered. This
-              proved to me that frequent stakeholder communication is just as
-              critical as the code itself.
+              Receiving the Certificate of Completion felt earned. Building the
+              User Manual and teaching the staff how to use the system proved
+              that I hadn't just written code—I had built a real product. The
+              experience at NCT Transnational has fundamentally prepared me for
+              a career in tech.
             </p>
             <div class="callout">
-              <div class="callout-label">// week 4 objectives</div>
+              <div class="callout-label">// next steps</div>
               <p>
-                Integrate the completed frontend UI with the Supabase backend to
-                enable actual CRUD (Create, Read, Update, Delete) operations,
-                and apply the accounting feedback into the user interface.
+                Return to Bicol University to finalize academic requirements,
+                integrate this Asset Management System into my professional
+                portfolio, and prepare for graduation and career hunting!
               </p>
             </div>
           </div>
@@ -1265,7 +1267,7 @@
               ><span class="v">Amante Villacorta | IT Officer</span>
             </div>
             <div class="info-row">
-              <span class="k">Hours</span><span class="v">135 / 495 hrs</span>
+              <span class="k">Hours</span><span class="v">495 / 495 hrs</span>
             </div>
           </div>
 
@@ -1283,37 +1285,37 @@
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Technical Skills</span
-                ><span class="pct">75%</span>
+                ><span class="pct">100%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 100%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Task Completion</span
-                ><span class="pct">85%</span>
+                ><span class="pct">100%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 85%"></div>
+                <div class="prog-fill" style="width: 100%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Team Integration</span
-                ><span class="pct">80%</span>
+                ><span class="pct">100%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 80%"></div>
+                <div class="prog-fill" style="width: 100%"></div>
               </div>
             </div>
             <div class="prog-item">
               <div class="prog-header">
                 <span class="label">Confidence Level</span
-                ><span class="pct">75%</span>
+                ><span class="pct">100%</span>
               </div>
               <div class="prog-track">
-                <div class="prog-fill" style="width: 75%"></div>
+                <div class="prog-fill" style="width: 100%"></div>
               </div>
             </div>
           </div>
@@ -1322,19 +1324,19 @@
             <div class="s-card-title">// highlights</div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Initialized React & Supabase backend.</p>
+              <p>Conducted production system testing.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Built UI layout with Tailwind CSS.</p>
+              <p>Demonstrated and test-ran the live system.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Developed core frontend components.</p>
+              <p>Authored the comprehensive User Manual.</p>
             </div>
             <div class="status-item">
               <div class="status-dot"></div>
-              <p>Consulted with Accounting for feedback.</p>
+              <p>Received Certificate of Completion.</p>
             </div>
           </div>
         </aside>
@@ -1343,7 +1345,7 @@
 
     <footer>
       <div class="footer-left">
-        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 03</div>
+        <div>Dave Gabriel M. Jazmin · OJT Field Report · Week 12</div>
         <div style="margin-top: 0.2rem">Bicol University · 2025-2026</div>
       </div>
     </footer>
